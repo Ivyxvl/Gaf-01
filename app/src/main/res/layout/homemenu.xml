@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarSize="0dp"
+        android:background="@color/yellow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Home"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/appointments"
+                android:text="APPOINTMENTS"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:textSize="29dp"
+                android:paddingTop="130dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/white"
+                />
+
+            <Button
+                android:id="@+id/finder"
+
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="440dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/white"
+                android:text="FINDER"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:textSize="30dp"
+                android:paddingTop="130dp"/>
+
+            <Button
+                android:id="@+id/advice"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="640dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/white"
+                android:text="ADVICE"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="@color/gray"
+                android:textSize="30dp"
+                android:paddingTop="130dp"/>
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/appointments"
+                android:layout_alignTop="@+id/appointments"
+                android:layout_alignEnd="@+id/appointments"
+                android:layout_alignBottom="@+id/appointments"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="54dp"
+                android:translationZ="100dp"
+                app:srcCompat="@drawable/appointmentsavatarcat" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/finder"
+                android:layout_alignTop="@+id/finder"
+                android:layout_alignEnd="@+id/finder"
+                android:layout_alignBottom="@+id/finder"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="54dp"
+                android:translationZ="100dp"
+                app:srcCompat="@drawable/finderavatarcat" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/advice"
+                android:layout_alignTop="@+id/advice"
+                android:layout_alignEnd="@+id/advice"
+                android:layout_alignBottom="@+id/advice"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="68dp"
+                android:layout_marginBottom="54dp"
+                android:translationZ="100dp"
+                app:srcCompat="@drawable/adviceavatarcat" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarSize="0dp"
+                android:background="@color/yellow">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+                    <Button
+                        android:onClick="onClick"
+                        android:id="@+id/story1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Ivy"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"
+                        android:translationZ="150dp"
+                        android:paddingTop="71dp"
+
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/story1"
+                        android:layout_alignTop="@+id/story1"
+                        android:layout_alignEnd="@+id/story1"
+                        android:layout_alignBottom="@+id/story1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/story2"
+                        android:translationZ="100dp" />
+
+
+                    <Button
+                        android:id="@+id/story2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+
+
+                        android:text="Ella"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"
+                        android:translationZ="150dp"
+                        android:paddingTop="71dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/story2"
+                        android:layout_alignTop="@+id/story2"
+                        android:layout_alignEnd="@+id/story2"
+                        android:layout_alignBottom="@+id/story2"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/story3"
+                        android:translationZ="100dp" />
+
+                    <Button
+                        android:id="@+id/story3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="230dp"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Bella"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"
+                        android:translationZ="150dp"
+                        android:paddingTop="71dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/story3"
+                        android:layout_alignTop="@+id/story3"
+                        android:layout_alignEnd="@+id/story3"
+                        android:layout_alignBottom="@+id/story3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/story4"
+                        android:translationZ="100dp" />
+
+                    <Button
+                        android:id="@+id/story4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="340dp"
+                        android:layout_marginStart="340dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Ann"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"
+                        android:translationZ="150dp"
+                        android:paddingTop="71dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/story4"
+                        android:layout_alignTop="@+id/story4"
+                        android:layout_alignEnd="@+id/story4"
+                        android:layout_alignBottom="@+id/story4"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/story1"
+                        android:translationZ="100dp" />
+
+
+                    <Button
+                        android:id="@+id/story5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="450dp"
+                        android:layout_marginStart="450dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Maria"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp"
+                        android:translationZ="150dp"
+                        android:paddingTop="71dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/story5"
+                        android:layout_alignTop="@+id/story5"
+                        android:layout_alignEnd="@+id/story5"
+                        android:layout_alignBottom="@+id/story5"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="22dp"
+                        android:src="@drawable/story3"
+                        android:translationZ="100dp" />
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarSize="0dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="160dp"
+                    android:text="Ivy Jordan"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="195dp"
+                    android:text="4 pets"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/app_name"
+
+                    android:outlineAmbientShadowColor="@color/black1"
+                    app:srcCompat="@drawable/back" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/story2" />
+
+            <Button
+                android:id="@+id/editprofilebutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/baloo"
+                android:paddingStart="1dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Edit Profile"
+                android:textAllCaps="true"
+                android:textColor="#646464"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:cornerRadius="5dp"
+                app:rippleColor="@color/black1"
+                app:strokeColor="@color/black1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp">
+
+                <Button
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+                    android:id="@+id/pet1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:paddingStart="1dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="KetTy"
+                    android:textColor="@color/black1"
+                    android:textSize="29dp"
+                    />
+
+                <Button
+                    android:id="@+id/pet2"
+                    android:text="Leo"
+                    android:fontFamily="@font/baloo"
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+                    android:textColor="@color/black1"
+                    android:textSize="29dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/pet3"
+                    android:text="JEON"
+                    android:fontFamily="@font/baloo"
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+                    android:textColor="@color/black1"
+                    android:textSize="29dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    />
+
+
+                <Button
+                    android:id="@+id/pet4"
+                    android:text="Mello"
+                    android:fontFamily="@font/baloo"
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+                    android:textColor="@color/black1"
+                    android:textSize="29dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

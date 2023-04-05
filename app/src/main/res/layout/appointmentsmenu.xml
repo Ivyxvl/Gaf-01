@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarSize="0dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/yellow">
+
+                <ImageView
+                    android:onClick="back_to_mainmenu"
+                    android:id="@+id/back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    app:srcCompat="@drawable/back"
+                    android:layout_marginTop="30dp"
+                    android:outlineAmbientShadowColor="@color/black1"
+                    android:layout_marginStart="10dp"/>
+
+                <CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:selectedWeekBackgroundColor="@color/gray" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"/>
+
+            <EditText
+                android:id="@+id/editTextTime"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="420dp"
+                android:ems="10"
+                android:fontFamily="@font/baloo"
+                android:textSize="23dp"
+                android:hint="Input datetime"
+                android:textColorHint="@color/light_gray"
+                android:inputType="time"
+                android:textColor="@color/black1" />
+
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/baloo"
+                android:hint="Pet's name"
+                android:textSize="24dp"
+                android:textColor="@color/black1"
+                android:textColorHint="@color/light_gray"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="490dp"/>
+
+            <EditText
+                android:inputType="textPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/baloo"
+                android:hint="Short message"
+                android:textColorHint="@color/light_gray"
+                android:textSize="24dp"
+                android:textColor="@color/black1"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="490dp"/>
+
+            <Button
+
+                android:id="@+id/story1"
+                android:layout_width="250dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_height="70dp"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="set"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/black1"
+                android:textSize="30dp"
+                android:translationZ="150dp"
+
+                />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
