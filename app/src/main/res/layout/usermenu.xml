@@ -57,11 +57,11 @@
             </RelativeLayout>
 
             <ImageView
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/story2" />
+                android:src="@drawable/user_icon" />
 
             <Button
                 android:id="@+id/editprofilebutton"
@@ -94,8 +94,6 @@
                 android:layout_marginTop="360dp">
 
                 <Button
-                    app:rippleColor="@color/black1"
-                    app:strokeColor="@color/black1"
                     android:id="@+id/pet1"
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
@@ -113,6 +111,9 @@
                     android:text="KetTy"
                     android:textColor="@color/black1"
                     android:textSize="29dp"
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+
                     />
 
                 <Button
@@ -178,6 +179,29 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="320dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/add"
+                    android:text="+ADD"
+                    android:fontFamily="@font/baloo"
+                    app:rippleColor="@color/black1"
+                    app:strokeColor="@color/black1"
+                    android:textColor="@color/yellow"
+                    android:textSize="29dp"
+                    android:textStyle="bold"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="400dp"
                     android:layout_marginEnd="20dp"
                     android:backgroundTint="@color/white"
                     />
