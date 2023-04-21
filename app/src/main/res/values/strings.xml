@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Gaf_finish</string>
+    <string name="app_name">Gaf</string>
+    <string name="get_pet_name">Select Puppy</string>
 </resources>

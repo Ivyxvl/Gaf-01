@@ -140,7 +140,7 @@
 
                 <Button
                     android:id="@+id/pet3"
-                    android:text="JEON"
+                    android:text="JOHN"
                     android:fontFamily="@font/baloo"
                     app:rippleColor="@color/black1"
                     app:strokeColor="@color/black1"

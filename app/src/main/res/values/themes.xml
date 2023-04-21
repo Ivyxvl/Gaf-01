@@ -11,6 +11,33 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyDatePickerStyle" parent="android:Widget.Material.DatePicker">
+        <item name="android:textColor">@color/black1</item>
+    </style>
+
+
+
+    <style name="CalendarTextAppearance">
+        <item name="android:textColor">@color/calendar_text_color</item>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </resources>
