@@ -52,11 +52,11 @@ public class ReminderMenu extends AppCompatActivity {
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openHome();
+                openReminderFirst();
             }
 
-            public void openHome() {
-                Intent intent = new Intent(ReminderMenu.this, HomeMenu.class);
+            public void openReminderFirst() {
+                Intent intent = new Intent(ReminderMenu.this, Reminder_first.class);
                 startActivity(intent);
             }
         });
@@ -69,12 +69,12 @@ public class ReminderMenu extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 String item = parent.getItemAtPosition(i).toString();
-                Toast.makeText(ReminderMenu.this, "Name: " + item, Toast.LENGTH_SHORT).show();
+
             }
         });
 
         radioGroup = findViewById(R.id.radio_name_group);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        /*radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
@@ -90,14 +90,14 @@ public class ReminderMenu extends AppCompatActivity {
 
                 }
             }
-        });
+        });*/
 
         shortMessage = (EditText) findViewById(R.id.shortMessage);
         shortMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 message = shortMessage.getText().toString();
-                showShortMessageToast(message);
+               // showShortMessageToast(message);
             }
         });
         set = findViewById(R.id.setButton);

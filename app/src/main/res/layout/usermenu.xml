@@ -19,16 +19,16 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="270dp"
-                android:background="@color/yellow">
+                android:background="@color/light_yellow">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="140dp"
-                    android:layout_marginEnd="50dp"
                     android:layout_marginTop="160dp"
-                    android:text="Ivy Jordan"
-                    android:textColor="@color/white"
+                    android:layout_marginEnd="50dp"
+                    android:text="username"
+                    android:textColor="@color/black"
                     android:textSize="30dp"
                     android:textStyle="bold" />
 
@@ -38,8 +38,8 @@
                     android:layout_marginStart="140dp"
                     android:layout_marginEnd="50dp"
                     android:layout_marginTop="195dp"
-                    android:text="4 pets"
-                    android:textColor="@color/white"
+                    android:text="nickname"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="normal" />
 
@@ -47,21 +47,31 @@
                     android:id="@+id/back"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="10dp"
-
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:contentDescription="@string/app_name"
+                    android:onClick="onClick"
+                    android:src="@drawable/back"
+                   />
 
-                    android:outlineAmbientShadowColor="@color/black1"
-                    app:srcCompat="@drawable/back" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USER"
+                    android:textColor="@color/gray"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="30dp"
+                    android:textSize="20dp"/>
             </RelativeLayout>
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_width="114dp"
+                android:layout_height="103dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/user_icon" />
+                android:src="@drawable/usericon" />
 
             <Button
                 android:id="@+id/editprofilebutton"

@@ -7,28 +7,32 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
-public class HomeMenu extends AppCompatActivity {
+public class Reminder_first extends AppCompatActivity {
 
-    private Button toUserMenu;
+
     private Button toReminderMenuFirst;
+    private ImageView to_home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homemenu);
+        setContentView(R.layout.activity_reminder_first);
 
-        toUserMenu = findViewById(R.id.user);
-        toReminderMenuFirst = findViewById(R.id.reminder);
 
-        toUserMenu.setOnClickListener(new View.OnClickListener() {
+        toReminderMenuFirst = findViewById(R.id.toReminder);
+        to_home = findViewById(R.id.backToHome1);
+
+
+        to_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openUser();
             }
 
-            public void openUser() {
-                Intent intent = new Intent(HomeMenu.this, UserMenu.class);
+            public void openUser(){
+                Intent intent = new Intent(Reminder_first.this, HomeMenu.class);
                 startActivity(intent);
             }
         });
@@ -36,11 +40,11 @@ public class HomeMenu extends AppCompatActivity {
         toReminderMenuFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openReminder();
+                openReminderMenu();
             }
 
-            public void openReminder() {
-                Intent intent = new Intent(HomeMenu.this, Reminder_first.class);
+            public void openReminderMenu() {
+                Intent intent = new Intent(Reminder_first.this, ReminderMenu.class);
                 startActivity(intent);
             }
         });

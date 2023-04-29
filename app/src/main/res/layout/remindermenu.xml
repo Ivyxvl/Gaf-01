@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:scrollbarStyle="insideInset"
         android:scrollbarSize="0dp"
-        android:background="@color/light_yellow">
+        android:background="@color/white">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -69,7 +69,7 @@
 
                 android:layout_marginTop="110dp"
                 android:layout_marginEnd="20dp"
-                android:background="@color/light_blue"
+                android:background="@color/purple_200"
                 android:fontFamily="@font/baloo"
                 android:hint="select reminder's date"
                 android:onClick="openDatePicker"
@@ -98,12 +98,12 @@
                 android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-
+                android:background="@color/light_blue"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="268dp"
                 android:layout_marginEnd="20dp"
-                android:backgroundTint="@color/light_blue"
+
                 android:fontFamily="@font/baloo"
                 android:textColorHint="@color/light_gray"
                 android:hint="select reminder's time"
@@ -140,10 +140,10 @@
                     android:id="@+id/auto_complete_txt"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@color/light_blue"
+                    android:background="@color/light_yellow"
                     android:fontFamily="@font/baloo"
                     android:inputType="none"
-                    android:hint="name"
+                    android:text="name"
                     android:textColorHint="@color/light_gray"
                     android:textColor="@color/light_gray"
                     android:textAlignment="textStart"
@@ -156,7 +156,7 @@
                 android:textSize="30sp"
 
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="530dp"
+                android:layout_marginTop="540dp"
                 android:textColor="@color/black1"
                 android:fontFamily="@font/baloo"
                 android:layout_alignParentStart="true"
@@ -168,7 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="565dp"
+                android:layout_marginTop="580dp"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
                 android:orientation="horizontal"
@@ -180,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="daily"
-                    android:textColor="@color/light_gray"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/baloo"
                     android:textSize="24sp"/>
 
@@ -189,7 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="weekly"
-                    android:textColor="@color/light_gray"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/baloo"
                     android:textSize="24sp"/>
 
@@ -197,7 +197,7 @@
                     android:id="@+id/rb_item_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/light_gray"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/baloo"
                     android:text="monthly"
                     android:textSize="24sp"/>
@@ -211,7 +211,7 @@
                 android:text="Write short message"
                 android:textSize="30sp"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="610dp"
+                android:layout_marginTop="630dp"
                 android:textColor="@color/black1"
                 android:fontFamily="@font/baloo"
                 android:layout_alignParentStart="true"
@@ -227,9 +227,9 @@
                 android:inputType="text"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="660dp"
+                android:layout_marginTop="685dp"
                 android:layout_marginEnd="20dp"
-                android:background="@color/light_blue"
+                android:background="@color/light_yellow"
                 android:fontFamily="@font/baloo"
                 android:paddingLeft="15dp"
                 android:textColorHint="@color/light_gray"
@@ -240,24 +240,22 @@
                 android:hint="for exp: visit to doc"/>
 
             <Button
-
                 android:id="@+id/setButton"
                 android:layout_width="250dp"
                 android:layout_height="70dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="760dp"
+                android:layout_marginTop="790dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="0dp"
-                android:backgroundTint="@color/light_blue"
                 android:fontFamily="@font/baloo"
+                android:background="@color/light_yellow"
                 android:text="set"
                 android:textColor="@color/black1"
                 android:textSize="30dp"
                 android:translationZ="150dp"
-
                 />
 
         </RelativeLayout>
